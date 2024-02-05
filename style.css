@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root{
+
+--corDeFundo:#11235A;
+
+--cor-do-header:black;
+
+--font-cabecalho: 'Edu TAS Beginner', cursive;
+
+
+}
+
+body{
+   
+background: var(--corDeFundo);
+
+}
+
+.cabecalho{
+
+background: var(--cor-do-header);
+
+display: flex;
+justify-content: space-evenly;
+color: white;
+}
+.titulo-cabecalho{
+
+display: flex;
+align-items: center;
+
+}
+.imagem-cabecalho{
+
+width:8%;
+margin: 1em 0 1em 0;
+
+border-radius: 20px;
+border: 2px solid white;
+
+}
+
+.paragrafo-cabecalho{
+
+    display: flex;
+    align-items: end;
+    font-size: 2em;
+    font-family: var(--font-cabecalho);
+    color: aliceblue;
+    font-weight: bold;
+
+
+}
+
+.lista {
+
+display: flex;
+align-items: center;
+text-decoration: none;
+color: aliceblue;
+
+}
+
+.imagem-contatos, .imagemsecao1{
+width: 2em;
+border-radius: 20px;
+margin: 1em;
+
+}
+
+.imagemsecao1{
+
+margin-left:3em;
+
+}
+
+.titulo-contatos{
+
+margin: 1em 0 0 1.5em;
+
+}
+
+.link-lista{
+    text-decoration: none;
+color: aliceblue;
+padding-left: 1em;
+}
+
+.link-estep{
+
+    padding-left: 0;
+}
+
+.secao-telefone{
+
+display: flex;
+justify-content: center;
+
+}
+
+.imagem-celular{
+
+
+width: 5em;
+
+}
+
+.botao-celular{
+
+margin-top: 2em;
+
+border-radius: 20px;
+
+}
+
+.contatos{
+
+display: none;
+
+justify-content: center;
+}
+
+.texto_secao_celular, .titulo-imagens{
+display: flex;
+align-self: center;
+font-size: 2em;
+
+color: deepskyblue;
+padding: 1em;
+
+}
+
+.secao2{
+
+display: grid;
+align-items: center;
+margin-right: 2em;
+
+}
+
+.linksecao2 , .linksecao1{
+
+padding-left: 0.5em;
+color: aliceblue;
+font-weight: 700;
+display: grid;
+align-self: start;
+}
+
+.linksecao1{
+
+padding-top: 0.5em;
+margin-left: 2em;
+
+}
+
+.secao-slide{
+
+display: grid;
+justify-content: center;
+margin-top: 8em;
+
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+   
+}
+.botao{
+    margin: 0.5em;
+}
+
+.img-reliquias-e-maquinas , .img-porsche, .img-bmw{
+
+width: 40vw;
+height: 30vh;
+border-radius: 20px ;
+border: black 10px solid;
+transition-duration: 1s;
+}
+
+.img-lamborghine ,.img-porsche ,.img-bmw{
+
+display: none;
+
+}
+
+.titulo-imagens{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.projetos-celular{
+
+   margin-top: 2em;
+   text-align: center;
+   background-color: black;
+}
+
+.titulo_mobile{
+
+    color: aliceblue;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.container_img_mobile{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-mobile{
+
+    border-radius: 35px;
+}
+
+.container_fizzbuzz{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5em;
+    text-decoration: none;
+
+}
+
+.titulofizz-buzz{
+
+color: aliceblue;
+text-align: center;
+text-transform: uppercase;
+margin-top: 3em;
+
+}
+
+.img-fizz-buzz{
+
+width: 30vw;
+border: aliceblue 10px solid;
+border-radius: 20px;
+
+}
+
+.img-fizz-buzz-mobile{
+
+    width: 10vw;
+    border: aliceblue 10px solid;
+    border-radius: 20px;
+    
+}
+
+.paragrafo-fizzbuzz{
+
+width: 20vw;
+text-align: center;
+margin: 1em;
+color: aliceblue;
+font-size: 1.3em;
+
+
+}
+
+
+.rodape{
+
+background-color: black;
+color: aliceblue;
+
+}
+
+.texto-rodape{
+
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.img-rodape{
+
+width: 5vw;
+border-radius: 20px;
+
+}
+.css{
+
+    height: 10vh;
+}
+
+.container-rodape{
+
+display: flex;
+justify-content: space-evenly;
+padding:1em 0 1em 0 ;
+
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1440px){
+
+
+    .img-mobile{
+
+        width: 25vw;
+    }
+
+
+    .img-fizz-buzz-mobile{
+    
+        width: 20vw;
+        margin-bottom: 1em;
+    
+    }
+
+    .paragrafo-fizzbuzz{
+    
+        width: 30vw;
+        opacity: 0.7;
+    
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .img-reliquias-e-maquinas , .img-porsche, .img-bmw{
+
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .img-mobile{
+
+        width: 25vw;
+    }
+    .container_fizzbuzz{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-fizz-buzz{
+    
+        width: 80vw;
+        border: 5px aliceblue solid;
+    }
+    
+    .paragrafo-fizzbuzz{
+    
+        width: 80vw;
+        opacity: 0.7;
+    
+    }
+    .img-fizz-buzz-mobile{
+    
+        width: 20vw;
+        margin-bottom: 1em;
+    
+    }
+    .img-rodape{
+        width: 15vw;
+    }
+    .css{
+        height: 20vh;
+    }
+
+}
+@media screen and (max-width:767px) {
+
+
+.cabecalho{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.paragrafo-cabecalho{
+
+font-size: 1em;
+align-items: center;
+
+}
+
+
+.imagem-cabecalho{
+    width: 30%;
+}
+
+.texto_secao_celular{
+
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.secao-slide{
+margin-top: 5em;
+}
+
+.imagens-slides{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo-imagens{
+
+font-size: 1.5em;
+text-align: center;
+
+
+}
+.img-reliquias-e-maquinas , .img-porsche, .img-bmw{
+
+    width: 90vw;
+    height: 20vh;
+}
+
+.container_img_mobile{
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+
+}
+
+.img-mobile{
+
+    width: 60vw;
+}
+
+.titulofizz-buzz{
+    margin-top: 1.5em;
+}
+.container_fizzbuzz{
+
+    flex-direction: column;
+    align-items: center;
+}
+.img-fizz-buzz{
+
+    width: 80vw;
+    border: 5px aliceblue solid;
+}
+
+.paragrafo-fizzbuzz{
+
+    width: 80vw;
+    opacity: 0.7;
+
+}
+.img-fizz-buzz-mobile{
+
+    width: 60vw;
+    margin-bottom: 1em;
+
+}
+
+.img-rodape{
+    width: 20vw;
+}
+}
+
